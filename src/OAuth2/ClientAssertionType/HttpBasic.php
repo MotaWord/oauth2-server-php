@@ -88,7 +88,7 @@ class HttpBasic implements ClientAssertionTypeInterface
      */
     public function getClientId()
     {
-        return $this->clientData['client_id'];
+        return isset($this->clientData) && isset($this->clientData['client_id']) ? $this->clientData['client_id'] : null;
     }
 
     /**
