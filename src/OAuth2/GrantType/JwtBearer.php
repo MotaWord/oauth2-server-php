@@ -203,7 +203,7 @@ class JwtBearer implements GrantTypeInterface, ClientAssertionTypeInterface
      */
     public function getClientId()
     {
-        return $this->jwt['iss'];
+        return $this->jwt['iss'] ?? null;
     }
 
     /**
@@ -213,7 +213,7 @@ class JwtBearer implements GrantTypeInterface, ClientAssertionTypeInterface
      */
     public function getUserId()
     {
-        return $this->jwt['sub'];
+        return $this->jwt['sub'] ?? null;
     }
 
     /**

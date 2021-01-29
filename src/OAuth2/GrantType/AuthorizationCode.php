@@ -100,7 +100,7 @@ class AuthorizationCode implements GrantTypeInterface
      */
     public function getClientId()
     {
-        return $this->authCode['client_id'];
+        return $this->authCode['client_id'] ?? null;
     }
 
     /**

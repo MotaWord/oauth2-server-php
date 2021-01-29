@@ -102,7 +102,7 @@ class RefreshToken implements GrantTypeInterface
      */
     public function getClientId()
     {
-        return $this->refreshToken['client_id'];
+        return $this->refreshToken['client_id'] ?? null;
     }
 
     /**

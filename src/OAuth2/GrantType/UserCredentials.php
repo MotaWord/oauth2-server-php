@@ -94,7 +94,7 @@ class UserCredentials implements GrantTypeInterface
      */
     public function getUserId()
     {
-        return $this->userInfo['user_id'];
+        return $this->userInfo['user_id'] ?? null;
     }
 
     /**

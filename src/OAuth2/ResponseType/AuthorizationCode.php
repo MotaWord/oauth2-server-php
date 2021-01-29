@@ -67,7 +67,7 @@ class AuthorizationCode implements AuthorizationCodeInterface
      */
     public function enforceRedirect()
     {
-        return $this->config['enforce_redirect'];
+        return $this->config['enforce_redirect'] ?? false;
     }
 
     /**
